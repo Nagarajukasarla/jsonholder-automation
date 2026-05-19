@@ -14,12 +14,23 @@ pipeline {
         }
 
 
+        stage('Build Docker Image') {
+
+            steps {
+
+                sh 'docker build -t api-framework .'
+            }
+        }
+
+
         stage('Run API Tests') {
 
             steps {
 
                 sh '''
-                    mvn clean test
+                    docker run --rm \
+                    --name api-container \
+                    api-framework
                 '''
             }
         }
