@@ -1,4 +1,5 @@
-<suite name="API Automation Suite" version="1">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >
+<suite name="API Automation Suite">
     <test name="Regression Tests">
         <classes>
             <class name="com.nagaraju.tests.UsersTest" />
