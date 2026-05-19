@@ -1,0 +1,13 @@
+[
+  {
+    "name": "Yudhishthira",
+    "email": "yudhishthira.dharma@kuru.com",
+    "address": {
+      "street": "Indraprastha Marg",
+      "city": "New Delhi",
+      "state": "Delhi",
+      "zipcode": "110001"
+    },
+    "phone": "9876543210"
+  }
+]

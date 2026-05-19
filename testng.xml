@@ -1,0 +1,8 @@
+<suite name="API Automation Suite" version="1">
+    <test name="Regression Tests">
+        <classes>
+            <class name="com.nagaraju.tests.UsersTest" />
+            <class name="com.nagaraju.tests.PostsTest" />
+        </classes>
+    </test>
+</suite>
