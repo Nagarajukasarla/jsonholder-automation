@@ -3,8 +3,8 @@ FROM jenkins/jenkins:lts
 USER root
 
 RUN apt-get update && \
-    apt-get install -y docker.io maven
+    apt-get install -y \
+    docker-cli \
+    maven
 
-RUN usermod -aG docker jenkins
-
-USER jenkins
+CMD ["/usr/bin/tini", "--", "/usr/local/bin/jenkins.sh"]
